@@ -2,21 +2,22 @@ import module.Student;
 import module.University;
 import org.example.StudyProfile;
 
+import java.io.IOException;
+import java.util.List;
+
 public class Main {
-    public static void main(String[] args) {
-        Student student = new Student();
-        student.setAvgExamScore(4.0f)
-                .setCurrentCourseNumber(3)
-                .setFullName("Ivanov Ivan Ivanovich")
-                .setUniversityId(1);
-        System.out.println(student);
-        University university = new University();
-        university.setId("21-00k")
-                .setMainProfile(StudyProfile.ECOLOGY)
-                .setShortName("Gard")
-                .setYearOfFoundation(1099)
-                .setFullName("Garvard");
-        System.out.println(university);
+    public static void main(String[] args) throws IOException {
+        List<University> universities =
+                XlSXReader.XLSReader("src/main/resources/universityInfo.xlsx");
+        for(University university : universities) {
+            System.out.println(university);
+        }
+
+        List<Student> students =
+                XlSXReader.X("src/main/resources/universityInfo.xlsx");
+        for(Student student : students) {
+            System.out.println(student);
+        }
                 
 
       

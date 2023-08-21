@@ -2,11 +2,11 @@ package module;
 
 public class Student {
     String fullName;
-    int universityId;
+    String universityId;
     int currentCourseNumber;
     float avgExamScore;
 
-    public Student(String fullName, int universityId, int currentCourseNumber, float avgExamScore) {
+    public Student(String fullName, String universityId, int currentCourseNumber, float avgExamScore) {
         this.fullName = fullName;
         this.universityId = universityId;
         this.currentCourseNumber = currentCourseNumber;
@@ -22,7 +22,7 @@ public class Student {
         return this;
     }
 
-    public Student setUniversityId(int universityId) {
+    public Student setUniversityId(String universityId) {
         this.universityId = universityId;
         return this;
     }
@@ -41,7 +41,7 @@ public class Student {
         return fullName;
     }
 
-    public int getUniversityId() {
+    public String getUniversityId() {
         return universityId;
     }
 

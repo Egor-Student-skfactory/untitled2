@@ -5,7 +5,11 @@ public enum StudyProfile {
     MEDICINE("Медецина"),
     PHYSICS("Физика"),
     ECOLOGY("Экология"),
-    BIOLOGY("Физика");
+    COMPUTER_SCIENCE("Информатика"),
+    MATHEMATICS("Математика"),
+    JURISPRUDENCE("Юриспруденция"),
+    BIOLOGY("Физика"),
+    LINGUISTICS("Лингвист");
 
 
 
