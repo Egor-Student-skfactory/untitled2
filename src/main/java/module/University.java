@@ -1,6 +1,6 @@
 package module;
 
-import org.example.StudyProfile;
+import enams.StudyProfile;
 
 public class University {
     String id;
