@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-09-17T18:39:01.125564500Z</date>
+  <millis>1694975941125</millis>
+  <nanos>564500</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2023-09-17T18:39:03.308729Z</date>
+  <millis>1694975943308</millis>
+  <nanos>729000</nanos>
+  <sequence>1</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-09-17T18:39:37.462119500Z</date>
+  <millis>1694975977462</millis>
+  <nanos>119500</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2023-09-17T18:39:39.448807500Z</date>
+  <millis>1694975979448</millis>
+  <nanos>807500</nanos>
+  <sequence>1</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-10-05T20:01:27.277974200Z</date>
+  <millis>1696536087277</millis>
+  <nanos>974200</nanos>
+  <sequence>0</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application started, Logger configured</message>
+</record>
+<record>
+  <date>2023-10-05T20:01:29.900831100Z</date>
+  <millis>1696536089900</millis>
+  <nanos>831100</nanos>
+  <sequence>1</sequence>
+  <logger>IO.XmlWriter</logger>
+  <level>INFO</level>
+  <class>IO.XmlWriter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling started</message>
+</record>
+<record>
+  <date>2023-10-05T20:01:29.917785300Z</date>
+  <millis>1696536089917</millis>
+  <nanos>785300</nanos>
+  <sequence>2</sequence>
+  <logger>IO.XmlWriter</logger>
+  <level>SEVERE</level>
+  <class>IO.XmlWriter</class>
+  <method>generateXmlReq</method>
+  <thread>1</thread>
+  <message>XML marshalling failed</message>
+  <exception>
+    <message>javax.xml.bind.JAXBException: Implementation of JAXB-API has not been found on module path or classpath.
+ - with linked exception:
+[java.lang.ClassNotFoundException: com.sun.xml.internal.bind.v2.ContextFactory]</message>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>newInstance</method>
+      <line>232</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.ContextFinder</class>
+      <method>find</method>
+      <line>375</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>691</line>
+    </frame>
+    <frame>
+      <class>javax.xml.bind.JAXBContext</class>
+      <method>newInstance</method>
+      <line>632</line>
+    </frame>
+    <frame>
+      <class>IO.XmlWriter</class>
+      <method>generateXmlReq</method>
+      <line>29</line>
+    </frame>
+    <frame>
+      <class>Main</class>
+      <method>main</method>
+      <line>66</line>
+    </frame>
+  </exception>
+</record>
+<record>
+  <date>2023-10-05T20:01:29.923768500Z</date>
+  <millis>1696536089923</millis>
+  <nanos>768500</nanos>
+  <sequence>3</sequence>
+  <logger>IO.JsonWriter</logger>
+  <level>INFO</level>
+  <class>IO.JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing started</message>
+</record>
+<record>
+  <date>2023-10-05T20:01:29.925763600Z</date>
+  <millis>1696536089925</millis>
+  <nanos>763600</nanos>
+  <sequence>4</sequence>
+  <logger>IO.JsonWriter</logger>
+  <level>INFO</level>
+  <class>IO.JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>Directory created successfully</message>
+</record>
+<record>
+  <date>2023-10-05T20:01:30.112263100Z</date>
+  <millis>1696536090112</millis>
+  <nanos>263100</nanos>
+  <sequence>5</sequence>
+  <logger>IO.JsonWriter</logger>
+  <level>INFO</level>
+  <class>IO.JsonWriter</class>
+  <method>writeJsonReq</method>
+  <thread>1</thread>
+  <message>JSON writing finished successfully</message>
+</record>
+<record>
+  <date>2023-10-05T20:01:30.139192100Z</date>
+  <millis>1696536090139</millis>
+  <nanos>192100</nanos>
+  <sequence>6</sequence>
+  <logger>Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Application finished</message>
+</record>
+</log>

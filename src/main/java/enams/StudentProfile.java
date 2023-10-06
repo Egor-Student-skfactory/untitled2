@@ -4,5 +4,6 @@ public enum StudentProfile {
     FULLNAME,
     UNIVERSITYID,
     CURRENTCOURSENUMBER,
-    AVGEXAM
+    AVGEXAM;
+
 }
